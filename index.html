@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Texanitos - Palapa en la Presa de la Soledad</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for a cohesive look */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f3e8; /* Light sandy background */
+            color: #333;
+        }
+        .header-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://placehold.co/1920x800/6B8E23/FFFFFF?text=Paisaje+Presa+Soledad'); /* Darker green overlay for text readability */
+            background-size: cover;
+            background-position: center;
+        }
+        .nav-link {
+            transition: all 0.3s ease-in-out;
+        }
+        .nav-link:hover {
+            color: #d1b06d; /* Golden highlight on hover */
+            transform: translateY(-2px);
+        }
+        .section-title {
+            color: #4a6b22; /* Darker green for titles */
+        }
+        .btn-primary {
+            background-color: #79ac3f; /* Primary button green */
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn-primary:hover {
+            background-color: #6a9b34; /* Slightly darker green on hover */
+        }
+        .card-bg {
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .card-bg:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header-bg text-white py-12 md:py-24 rounded-b-xl shadow-lg">
+        <div class="container mx-auto px-4 text-center">
+    
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 rounded-lg bg-black bg-opacity-30 p-4 inline-block">Los Texanitos</h1>
+            <p class="text-xl md:text-2xl rounded-lg bg-black bg-opacity-30 p-2 inline-block"
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gradient-to-r from-green-700 to-green-600 shadow-xl py-4 sticky top-0 z-50 rounded-b-lg">
+        <div class="container mx-auto px-4 flex justify-center space-x-4 md:space-x-8">
+            <a href="#inicio" class="nav-link text-white text-lg font-medium py-2 px-3 rounded-full hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">Inicio</a>
+            <a href="#comidas" class="nav-link text-white text-lg font-medium py-2 px-3 rounded-full hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">Comidas</a>
+            <a href="#bebidas" class="nav-link text-white text-lg font-medium py-2 px-3 rounded-full hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">Bebidas</a>
+            <a href="#actividades" class="nav-link text-white text-lg font-medium py-2 px-3 rounded-full hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">Actividades</a>
+            <a href="#contacto" class="nav-link text-white text-lg font-medium py-2 px-3 rounded-full hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">Contacto</a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+
+        <!-- Inicio Section -->
+        <section id="inicio" class="my-12 py-8 bg-white rounded-xl shadow-lg p-6">
+            <h2 class="section-title text-3xl md:text-4xl font-bold text-center mb-6">Bienvenidos a Los Texanitos</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="logo los texanitos.jpg" alt="Imagen de la Palapa Los Texanitos" class="rounded-lg shadow-md w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2 text-lg text-gray-700">
+                    <p class="mb-4">Escápate del bullicio de la ciudad y sumérgete en la tranquilidad de "Los Texanitos", tu palapa favorita ubicada a orillas de la hermosa Presa de la Soledad en Colón, Querétaro.</p>
+                    <p class="mb-4">Aquí, la naturaleza, la buena comida y la diversión se unen para crear recuerdos inolvidables. Ya sea que busques un día de relajación, una aventura en el agua o simplemente disfrutar de una deliciosa comida con vistas espectaculares, ¡lo encontrarás todo con nosotros!</p>
+                    <p>¡Te esperamos con los brazos abiertos para que vivas una experiencia auténtica y refrescante!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comidas Section -->
+        <section id="comidas" class="my-12 py-8 bg-white rounded-xl shadow-lg p-6">
+            <h2 class="section-title text-3xl md:text-4xl font-bold text-center mb-8">Nuestras Delicias Culinarias</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-bg p-6 rounded-lg text-center">
+                    <img src="mojarra frita.jpg" alt="Mojarra Frita" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-green-700">Mojarra Frita Estilo Texanitos</h3>
+                    <p class="text-gray-600">Fresca mojarra de la presa, frita a la perfección, acompañada de arroz y ensalada.</p>
+                </div>
+                <div class="card-bg p-6 rounded-lg text-center">
+                    <img src="cocteles.jpg" alt="Carne Asada" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-green-700">Cocteles y caldos 
+</h3>
+                    <p class="text-gray-600">— clásicos bien servidos:
+
+- Cocteles de camarón, pulpo o combinados (chico, mediano o grande)  
+- Caldo de pescado, caldo de camarón, sopa o cazuela de mariscos.</p>
+                </div>
+                <div class="card-bg p-6 rounded-lg text-center">
+                    <img src="camarones.jpg" alt="Quesadillas de Huitlacoche" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-green-700">Camarones — estilo que elijas:
+</h3>
+                    <p class="text-gray-600">
+- Al mojo, a la diabla, empanizados, al ajillo o en aguachile  
+- Ensaladas y hasta camarones “a la momia” para los que buscan algo distinto  
+Recomendado para amantes del picante: camarones a la diabla
+.</p>
+                </div>
+                <div class="card-bg p-6 rounded-lg text-center">
+                    <img src="gorditasmaiz.jpg" alt="Guacamole Fresco" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-green-700">Antojitos y especialidades: 
+
+</h3>
+                    <p class="text-gray-600">Tostadas de ceviche, camarón, pulpo o combinadas  
+- Gorditas de queso o combinadas, papas a la francesa  
+- Platillos extra como arrachera, carne asada o milanesa de pollo para quienes buscan opciones no marinas
+.</p>
+                </div>
+                <div class="card-bg p-6 rounded-lg text-center">
+                    <img src="nose.jpg" alt="Ensalada Mexicana" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-green-700">Para peques y antojos sencillos:  
+</h3>
+                    <p class="text-gray-600">Nuggets, papas, caldo de pollo (disponible solo domingos)  
+- Mole rojo tradicional (también domingos)
+.</p>
+                </div>
+                <div class="card-bg p-6 rounded-lg text-center">
+                    <img src="postre.jpg" alt="Dulce de Calabaza" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-green-700">Lo mejor del sabor de la presa... sin complicaciones:
+
+</h3>
+                    <p class="text-gray-600">Pregunta por nuestro postre casero especial, ¡siempre una delicia!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bebidas Section -->
+        <section id="bebidas" class="my-12 py-8 bg-white rounded-xl shadow-lg p-6">
+            <h2 class="section-title text-3xl md:text-4xl font-bold text-center mb-8">Refresca Tu Día</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-bg p-6 rounded-lg text-center">
+                    <img src="cervezas.jpg" alt="Aguas Frescas" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-green-700">Cervezas:
+</h3>
+                    <p class="text-gray-600">Corona y Victoria
+  - Chica $35.00  
+  - Grande $60.00  
+  - Mega $70.00  
+  -Latón de cerveza $35.00  
+!</p>
+                </div>
+                <div class="card-bg p-6 rounded-lg text-center">
+                    <img src="chelada.jpg" alt="Cerveza Fría" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-green-700">Cheladas y Micheladas:
+</h3>
+                    <p class="text-gray-600">- Chelada / Michelada chica $70.00  
+- Chelada / Michelada grande $90.00  
+- Chelada / Michelada mega $100.00  
+- Micheladas con sabor especial $80.00, $100.00 o $110.00 (según tamaño y sabor)  
+.</p>
+                </div>
+                <div class="card-bg p-6 rounded-lg text-center">
+                    <img src="aguas.jpg" alt="Michelada" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-green-700">Aguas frescas y jugos:
+
+</h3>
+                    <p class="text-gray-600">- Agua de sabor (½ litro) $20.00  
+- Agua de sabor (1 litro) $35.00  
+- Jarra de agua de sabor $60.00  
+- Jarra de limonada o naranjada $90.00  
+- Limonada / Naranjada individual $50.00  
+
+.</p>
+                </div>
+                <div class="card-bg p-6 rounded-lg text-center">
+                    <img src="refrescos.jpg" alt="Refrescos y Jugos" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-green-700">Refrescos </h3>
+                    <p class="text-gray-600">Coca-Cola de vidrio $30.00  
+- Coca-Cola 600 ml $35.00  
+- Refrescos de sabor $30.00  
+- Agua embotellada 1 L $25.00.</p>
+                </div>
+                <div class="card-bg p-6 rounded-lg text-center">
+                    <img src="cafedeolla.jpg" alt="Café de Olla" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-green-700">Café de Olla</h3>
+                    <p class="text-gray-600">Para los amantes del buen café, con un toque de piloncillo y canela.</p>
+                </div>
+                <div class="card-bg p-6 rounded-lg text-center">
+                    <img src="ajenas.jpg" alt="Tequila" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-green-700">Ajenos</h3>
+                    <p class="text-gray-600">Si gustas traer una bebida de tu eleccion no hay problema  .</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Actividades Section -->
+        <section id="actividades" class="my-12 py-8 bg-white rounded-xl shadow-lg p-6">
+            <h2 class="section-title text-3xl md:text-4xl font-bold text-center mb-8">Diversión para Todos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="card-bg p-6 rounded-lg">
+                    <img src="pesca.jpg" alt="Pesca en la Presa" class="rounded-md mb-4 w-full h-64 object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-green-700">Pesca Deportiva</h3>
+                    <p class="text-gray-600">Disfruta de la tranquilidad de la presa mientras intentas pescar mojarra, lobina o bagre. ¡Pregunta por renta de equipo!</p>
+                </div>
+                <div class="card-bg p-6 rounded-lg">
+                    <img src="lancha.jpg" alt="Kayaks en el Agua" class="rounded-md mb-4 w-full h-64 object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-green-700">Paseos en Lancha y Kayak</h3>
+                    <p class="text-gray-600">Explora la presa con un emocionante paseo en lancha o rema a tu propio ritmo en nuestros kayaks. Ideal para toda la familia.</p>
+                </div>
+                <div class="card-bg p-6 rounded-lg">
+                    <img src="cuatrimoto.jpg" alt="Kayaks en el Agua" class="rounded-md mb-4 w-full h-64 object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-green-700">Paseos en caballo y cuatrimoto</h3>
+                    <p class="text-gray-600">Explora la presa y sus hermosos paisajes verdes y naturales sobre los lomos de un fino caballo o sobre una cuatrimoto extrema ¡tu decides¡
+                </div>
+                   
+            <div>
+                    <img src="areas verdes .jpg" alt="Área Verde para Descanso" class="rounded-md mb-4 w-full h-64 object-cover">
+                    <h3 class="text-xl font-semibold mb-2 text-green-700 text-center">Áreas de Descanso y Juegos</h3>
+                    <p class="text-gray-600 text-center">Contamos con amplias zonas verdes para que te relajes bajo la sombra de los árboles, así como juegos para los más pequeños. Perfecto para picnics y convivencia familiar.</p>
+                </div>
+           
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto" class="my-12 py-8 bg-white rounded-xl shadow-lg p-6">
+            <h2 class="section-title text-3xl md:text-4xl font-bold text-center mb-8">Contáctanos</h2>
+            <div class="flex flex-col md:flex-row gap-8 items-start">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-green-700">Estamos Aquí para Ti,  Palapa 4</h3>
+                    <p class="text-gray-700 mb-2"><strong>Dirección:</strong> Orilla de la Presa de la Soledad, Colón, Querétaro.</p>
+                    <p class="text-gray-700 mb-2"><strong>Teléfono:</strong> <a href="tel:+524421234567" class="text-blue-600 hover:underline">+52 5653885412</a></p>
+                    <p class="text-gray-700 mb-2"><strong>Email:</strong> <a href="mailto:info@lostexanitos.com" class="text-blue-600 hover:underline">info@lostexanitos.com</a></p>
+                    <p class="text-gray-700 mb-4"><strong>Horario:</strong> Abierto de Jueves a Domingo de 9:00 AM a 7:00 PM</p>
+
+                    <h3 class="text-2xl font-semibold mb-4 text-green-700">Síguenos en Redes Sociales</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-700 hover:text-blue-500 text-4xl" aria-label="Facebook">📘</a> <!-- Placeholder for social icon -->
+                        <a href="#" class="text-pink-600 hover:text-pink-400 text-4xl" aria-label="Instagram">📸</a> <!-- Placeholder for social icon -->
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-green-700">Envíanos un Mensaje</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="nombre" class="block text-gray-700 font-medium mb-1">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" class="w-full p-3 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500" placeholder="Tu Nombre" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-1">Email:</label>
+                            <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500" placeholder="tu.email@ejemplo.com" required>
+                        </div>
+                        <div>
+                            <label for="mensaje" class="block text-gray-700 font-medium mb-1">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary text-white font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-6 mt-12 rounded-t-xl shadow-inner">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Los Texanitos. Todos los derechos reservados.</p>
+            <p>Diseñado con amor desde Querétaro.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
